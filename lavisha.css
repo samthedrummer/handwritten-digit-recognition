@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
+
+/* Animations (example) */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+/* styles.css */
+
+/* Styles for the image gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 10px;
+}
+
+.image-gallery img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+/* styles.css */
+
+/* Styles for the image gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.image-gallery img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transformation animation */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Fade-in animation for the gallery */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.image-gallery img {
+    animation: fadeIn 0.5s ease-out; /* Apply fade-in animation */
+}
+
